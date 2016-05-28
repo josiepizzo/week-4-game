@@ -61,6 +61,7 @@ body {
 }
 
 #crystals {
+	height: 100%;
 	margin-top: 15px;
 	margin-bottom:26px;
 	padding:30px;
@@ -69,11 +70,6 @@ body {
 .crystalImage {
 	height: 100%;
 	padding:0px 30px;
-}
-
-.crystalImage:firstchild {
-	margin-left: 0px;
-
 }
 
 #totalScore {
