@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector Game</title>
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+      <script src="assets/js/game.js"></script>
+      
+</head>
+
+<body>
+	
+<div id = "wrapper">
+
+<h1 class="game_title">Crystal Collectors Game!</h1>
+
+	<div id="instructions" class="instruction_text">
+		<h2>Instructions</h2>
+		<ul class="instruction_list">
+			<li>You will be given a random number at the start of the game.</li>
+			<li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+			<li>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</li>
+			<li>Each time the game starts, the game will change the values of each crystal.</li>
+		</ul>
+	</div>
+
+	<div class = "container">
+		<div id="guessingNumber">
+			<h2 class="guess_text">Number to Guess: <span class="value"></span></h2> 	
+		</div>
+
+		<div id="scoreboard">
+			<h3><span id="status"></span></h3>
+			<p class="score_text">Wins: <span id="win"></span></p>
+			<br/>
+			<p class="score_text">Losses: <span id="loss"></span> </p>
+		</div>
+	</div>
+
+	
+	<div id="crystals">
+			<img class="crystalImage" src="assets/images/diamond-blue.png" id="blue-diamond" alt="Blue Diamond" width="142" height="142">
+			<img class="crystalImage" src="assets/images/diamond-green.png" id="green-diamond" alt="Green Diamond" width="142" height="142">
+			<img class="crystalImage" src="assets/images/diamond-pink.png" id="pink-diamond" alt="Pink Diamond" width="142" height="142">
+			<img class="crystalImage" src="assets/images/diamond-yellow.png" id="yellow-diamond" alt="Yellow Diamond" width="142" height="142">
+	</div>
+
+	<div id ="totalScore">
+		<h2 id = "your_score">Your Total Score is: <span id ="yourScore">0</span></h2>
+		
+	</div>
+
+</div>
+
+</body>
+
+</html>
