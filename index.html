@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Crystals Collector Game</title>
+
+<!-- linking CSS -->    
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
       <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-      <script src="assets/js/game.js"></script>
-
+<!-- jQuery library -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-
-      
-      
+<!-- linking JS -->
+      <script src="assets/js/game.js"></script>
 </head>
 
 <body>
@@ -31,7 +31,9 @@
 
 	<div class = "container">
 		<div id="guessingNumber">
-			<h2 class="guess_text">Number to Guess: <span class="value"></span></h2> 	
+			<h2 class="guess_text">Number to Match: <span id="randomNumber"></span></h2> 
+			
+			<h2 class="guess_text">Your Current Number: <span class="guessdisplay">0</span></h2>	
 		</div>
 
 		<div id="scoreboard">
@@ -43,17 +45,17 @@
 	</div>
 
 	
-	<div id="crystals">
-			<img class="crystalImage" src="assets/images/diamond-blue.png" id="blue-diamond" alt="Blue Diamond" width="142" height="142">
-			<img class="crystalImage" src="assets/images/diamond-green.png" id="green-diamond" alt="Green Diamond" width="142" height="142">
-			<img class="crystalImage" src="assets/images/diamond-pink.png" id="pink-diamond" alt="Pink Diamond" width="142" height="142">
-			<img class="crystalImage" src="assets/images/diamond-yellow.png" id="yellow-diamond" alt="Yellow Diamond" width="142" height="142">
+	<div class="crystals">
+			<img class="blueCrystal crystalImage" src="assets/images/diamond-blue.png" id="blue" alt="Blue Diamond" width="142" height="142">
+			<img class="greenCrystal crystalImage" src="assets/images/diamond-green.png" id="green" alt="Green Diamond" width="142" height="142">
+			<img class="pinkCrystal crystalImage" src="assets/images/diamond-pink.png" id="pink" alt="Pink Diamond" width="142" height="142">
+			<img class="yellowCrystal crystalImage" src="assets/images/diamond-yellow.png" id="yellow" alt="Yellow Diamond" width="142" height="142">
 	</div>
 
-	<div id ="totalScore">
+<!-- 	<div id ="totalScore">
 		<h2 id = "your_score">Your Total Score is: <span id ="yourScore">0</span></h2>
 		
-	</div>
+	</div> -->
 
 </div>
 
